@@ -1,0 +1,7 @@
+{
+  "iterations": 12,
+  "angle": 90,
+  "constants": "",
+  "axiom": "FX",
+  "rules": ["X=X+YF+", "Y=FX-Y"]
+}
