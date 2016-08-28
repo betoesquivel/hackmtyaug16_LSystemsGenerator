@@ -22,7 +22,7 @@ const WIDTH = 512;
  */
 function startHandler(params, callback)
 {
-  const paramsAndCallback = Object.assign({}, params, {'callback': (g_commands)=> () => callback(null, g_commands)});
+  const paramsAndCallback = Object.assign({}, params, {'callback': (g_commands)=> () =>{ console.log(g_commands); callback(null, g_commands); }});
   updateStatus( "Generating command string...", generateCmdString(paramsAndCallback) );
 }
 
