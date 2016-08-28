@@ -11,16 +11,16 @@
 #
 # Happy Coding!
 
-service: aws-nodejs # NOTE: update this with your service name
+service: bigben-lsystems-parser # NOTE: update this with your service name
 
 provider:
   name: aws
   runtime: nodejs4.3
 
 # you can overwrite defaults here
-#defaults:
-#  stage: dev
-#  region: us-east-1
+defaults:
+  stage: dev
+  region: eu-west-1
 
 # you can add packaging information here
 package:
@@ -31,7 +31,7 @@ package:
 #  artifact: my-service-code.zip
 
 functions:
-  hello:
+  parse:
     handler: handler.generateLSystem
 
 #   you can add any of the following events
